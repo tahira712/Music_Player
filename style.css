@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+    background: #000;
+
+}
+body{display: flex;
+align-items: center;
+justify-content:center;}
+
+.main {
+    width: 400px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    padding-top: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    filter:drop-shadow(0 0 2rem #830000);
+}
+
+.playForwardBack {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+.songName {
+    color: #FFF;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #C4C4C4;
+    border-radius: 16px;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 9px;
+    width: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    box-shadow: -407px 0 0 400px #830000;
+}
+
+
+.volume {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shuffleAndLoop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#pause{display: none;}
+.fa-play{font-size: 60px; display: none;}
+#coverImg{width: 100%; height: 100%; object-fit: cover; border-radius: 50%;}
+#forward{
+    transform: rotate(180deg);}
+    
